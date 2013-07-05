@@ -49,9 +49,9 @@ $(function() {
 
         /* Add map layers defined above */  
         m.addLayer(mapbox.layer().id(base));
-        (embed) ? m.zoom(3) : m.zoom(3);
-        /* Set the location and zoom level for the map to laod on, and limit zoom range */  
-        m.center({ lat: 19, lon: 5 }).setZoomRange(2,10);
+        (embed) ? m.zoom(14) : m.zoom(14);
+        /* Set the location and zoom level for the map to laod on, and limit zoom range  14/32.2996/36.3205 */  
+        m.center({ lat: 32.2996, lon: 36.3205 }).setZoomRange(14,20);
         /* Add zoom buttons and attribution */  
         m.ui.zoomer.add();
         m.ui.attribution.add()
