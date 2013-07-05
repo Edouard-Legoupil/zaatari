@@ -3,7 +3,7 @@ $(function() {
  
  
  /* Asssign all map tiles to variables, coming from the UNHCR MapBox account */ 
-    var base = 'unhcr.map-y08nvydq',
+    var base = 'unhcr.map-3wc63hpq',
         layers = [
             'unhcr.unhcr-global-emergency-countries,unhcr.unhcr-global-emergencies',
             'unhcr.unhcr-global-emergency-countries,unhcr.unhcr-global-refugees',
@@ -49,9 +49,9 @@ $(function() {
 
         /* Add map layers defined above */  
         m.addLayer(mapbox.layer().id(base));
-        (embed) ? m.zoom(14) : m.zoom(14);
+        (embed) ? m.zoom(12) : m.zoom(12);
         /* Set the location and zoom level for the map to laod on, and limit zoom range  14/32.2996/36.3205 */  
-        m.center({ lat: 32.2996, lon: 36.3205 }).setZoomRange(14,20);
+        m.center({ lat: 32.2996, lon: 36.3205 }).setZoomRange(12,20);
         /* Add zoom buttons and attribution */  
         m.ui.zoomer.add();
         m.ui.attribution.add()
