@@ -55,7 +55,7 @@ $(function() {
         /* Add zoom buttons and attribution */  
         m.ui.zoomer.add();
         m.ui.attribution.add()
-            .content('<a href="http://mapbox.com/about/maps">Terms &amp; Feedback</a>');
+            .content('This map does not imply official endorsement or acceptance by the United Nations');
         
         $.each(layer, function(i,l) {
             m.addLayer(l.layer.composite(true));
